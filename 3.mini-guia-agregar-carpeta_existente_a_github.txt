@@ -1,0 +1,24 @@
+¿Cómo agregar una carpeta/proyecto existente a un nuevo repositorio GIT (en GitHub) ?
+
+1) Abrir Git bash
+2) Cambiarse al directorio del proyecto exsistente a subir.
+3) Inicializar repositorio local. Ejecute:  git init
+4) Agregar el contenido al stage. Ejecute:  git add .
+5) Pasar el contenido del proyecto al head.  Ejecute:  git commit -m "Commit inicial ... etc"
+6) Ir al sitio github.com.  Crear repositorio vacío con el nombre del proyecto.
+	New --> Colocar Repository Name --> Marcar si será público o privado ---> Pulsar Create Repository.
+	(Si aspira ocupar GitHub Pages, el repositorio debe ser PÚBLICO)
+7) Una vez creado el repositorio vacío, copiar la dirección del mismo seleccionado la opción SSH.
+	Ej:  git@github.com:cegb/prueba04.git
+8) Regresar al Git bash. Vamos a hacer la conexión del repo local con el remoto (github).(Ésto se hace una sola vez).
+	Ejecute:  git remote add origin git@github.com:cegb/prueba04.git
+9) Realizar push. Ejecute: git push origin master
+
+PD:
+Si le aparece error de NO registro local de nombre de usuario y/o Email:
+	Ejecute:  
+	git config --global user.name "Pedro Pérez"
+	git config --global user.email "pedro.perez@gmail.com"
+
+
+

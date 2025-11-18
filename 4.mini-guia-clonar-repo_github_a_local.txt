@@ -1,0 +1,28 @@
+TALENTO FUTURO
+==============
+
+¿Cómo hacer un clone de una carpeta/proyecto remoto existente(en GitHub) en una carpeta local en mi disco ?
+
+1) Ingresar al repositorio remoto Github a clonar. (Puede ser propio o de un tercero)
+	Copiar la dirección HTTPS o SSH de dicho repo.
+2) Abrir Git Bash. Ubicarse en la carpeta local donde queremos recibir la carpeta del nuevo proyecto.
+3) Ejecute: git clone git@github.com:cegb/prueba04.git
+	Aquí se descarga el contenido del repo remoto.
+4) Comience a hacer los cambios que corresponda.
+
+Recordar (posteriormente):
+Al agregar nuevos archivos/carpetas luego debemos hacer:
+1) Abrir Git bash
+2) Cambiarse al directorio del proyecto existente clonado.
+3) Agregar el contenido al stage. Ejecute:  git add .
+4) Pasar el contenido del proyecto al head.  Ejecute:  git commit -m "Descripción de los cambios ... etc"
+5) Realizar push. Ejecute: git push origin master
+
+PD:
+Si le aparece error de NO registro local de nombre de usuario y/o Email:
+	Ejecute:  
+	git config --global user.name "Pedro Pérez"
+	git config --global user.email "pedro.perez@gmail.com"
+
+
+

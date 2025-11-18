@@ -1,0 +1,30 @@
+GIT
+===
+
+* Pasos iniciales. Configuración de Git en el equipo.
+1) Abrir el Git Bash.
+2) Ejecute:  
+	git config --global user.name "Pedro Pérez"
+	git config --global user.email "pedro.perez@gmail.com"
+
+Estos comandos se ocupan una sola vez en el equipo.
+(si el equipo es formateado, debe ejecutarse nuevamente).
+
+
+
+* Crear repositorio Git para un proyecto.
+
+1) Abrir el Git Bash en la carpeta del proyecto a incluir a un repositorio.
+2) Ejecute:
+	git init
+Este paso solo se ejecuta una vez por cada proyecto.
+	
+3) Ejecute:
+	git add --all
+	
+4) Ejecute:
+	git commit -m "Mensaje descriptivo del commit"
+
+Nota: Por cada cambio (o grupo de cambios) que se haga a algún archivo o carpeta del proyecto, 
+se habrá de requerir oportunamente ejecutar los pasos 3 y 4.
+
